@@ -1,0 +1,9 @@
+<section class="reviews-section dark">
+    <h2>Отзывы учеников</h2>
+    <div class="reviews-grid">
+        <div class="review-card" *ngFor="let review of reviews">
+            <p class="quote">“{{ review.text }}”</p>
+            <p class="author">- {{ review.author }}</p>
+        </div>
+    </div>
+</section>

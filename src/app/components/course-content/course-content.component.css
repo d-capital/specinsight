@@ -1,0 +1,42 @@
+.course-section {
+    padding: 4rem 1rem;
+    background: #1c1c1c;
+    color: #eaeaea;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+
+  .chapters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .chapter-card {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    border: 1px solid #333;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .chapter-card:hover {
+    border-color: #1e90ff;
+    background-color: #1f1f1f;
+  }
+
+  .chapter-card h3 {
+    margin-bottom: 0.5rem;
+    color: #1e90ff;
+    font-size: 1.2rem;
+  }
+
+  .chapter-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+  }

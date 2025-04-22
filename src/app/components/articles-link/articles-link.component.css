@@ -1,0 +1,18 @@
+.articles-section {
+    padding: 3rem 1rem;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+
+.articles-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.articles-link:hover {
+    text-decoration: underline;
+}
