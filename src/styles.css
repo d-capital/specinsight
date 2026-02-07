@@ -1,11 +1,25 @@
 body {
-    margin: 0;
-    background-color: #101010;
-    color: white;
-    font-family: Arial, sans-serif;
-  }
-  a {
-    color: #42a5f5;
-    text-decoration: none;
-  }
-  
+  margin: 0;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Bold */
+  letter-spacing: 1px;
+}
+/* Light/Thin Accents */
+.subtext {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300; /* Light */
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}

@@ -1,7 +1,7 @@
 .footer {
     padding: 2rem 1rem;
-    background-color: #111;
-    color: #aaa;
+    background-color: #ffffff;
+    color: #000000;
     text-align: center;
 }
 
@@ -14,10 +14,10 @@
 
 .footer-nav a {
     margin: 0 1rem;
-    color: #aaa;
+    color: #000000;
     text-decoration: none;
 }
 
 .footer-nav a:hover {
-    color: #fff;
+    color: #2d2d2d;
 }

@@ -1,9 +1,11 @@
 <section class="course-section dark">
-    <h2 class="section-title">📘 Содержание Курса</h2>
+    <h2 class="section-title">Содержание Курса</h2>
     <div class="chapters">
       <div class="chapter-card" *ngFor="let chapter of chapters">
-        <h3>{{ chapter.title }}</h3>
-        <p>{{ chapter.description }}</p>
+        <a routerLink="{{chapter.link}}">
+          <h3>{{ chapter.title }}</h3>
+          <p>{{ chapter.description }}</p>
+        </a>
       </div>
       <div class="chapter-card">
         <a routerLink="/articles" class="articles-link" routerLinkActive="active">К курсу →</a>

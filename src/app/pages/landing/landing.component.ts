@@ -7,9 +7,7 @@ import { ReviewsComponent } from '../../components/reviews/reviews.component';
 @Component({
   selector: 'app-landing',
   imports: [HeroSectionComponent,
-    CourseContentComponent,
-    PricingComponent,
-    ReviewsComponent],
+    CourseContentComponent],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.css'
 })

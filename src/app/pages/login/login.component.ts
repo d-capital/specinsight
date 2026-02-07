@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
+  styleUrl: './login.component.css'
 })
 export class LoginComponent implements OnInit {
   constructor(private authService: AuthService, private http: HttpClient) {}

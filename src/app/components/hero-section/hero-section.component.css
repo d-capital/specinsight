@@ -1,20 +1,21 @@
 .hero {
     padding: 4rem;
     text-align: center;
-    background: #111;
-    color: white;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 .cta-buttons button {
-    margin: 0.5rem;
+    margin: 1.0rem;
     padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 8px;
-    background-color: #1e90ff;
-    color: white;
+    border-radius: 2px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: large;
     cursor: pointer;
 }
 
 .cta-buttons button:hover {
-    background-color: #0077cc;
+    background-color: #272727;
 }

@@ -1,9 +1,17 @@
 <header class="header">
-    <nav>
-        <a routerLink="/" routerLinkActive="active">Главная</a>
-        <a routerLink="/articles" routerLinkActive="active">Курс</a>
-        <a routerLink="/login" routerLinkActive="active">О проекте</a>
-        <!--a routerLink="/login" routerLinkActive="active">Требования с ИИ</a>
-        <a routerLink="/login" routerLinkActive="active">Войти</a-->
-    </nav>
+  <nav>
+    <!-- Левая часть: логотип -->
+    <div class="logo-container">
+      <a routerLink="/" class="logo">
+        <img src="silogo.png" alt="Logo" />
+      </a>
+    </div>
+
+    <!-- Правая часть: пункты меню -->
+    <div class="menu-container">
+      <a routerLink="/" routerLinkActive="active">Главная</a>
+      <a routerLink="/articles" routerLinkActive="active">Курс</a>
+      <a routerLink="/login" routerLinkActive="active">Об авторе</a>
+    </div>
+  </nav>
 </header>

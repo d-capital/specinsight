@@ -1,19 +1,34 @@
 .header {
-    background-color: #1a1a1a;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
-  }
-  nav {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-  }
-  a {
-    color: #42a5f5;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  a.active {
-    border-bottom: 2px solid #42a5f5;
-  }
-  
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Равномерное распределение по краям */
+  align-items: center; /* Вертикальное выравнивание по центру */
+  gap: 1.5rem;
+}
+
+.logo-container {
+  flex: 0 0 auto; /* Фиксированный размер, не сжимается */
+}
+
+.menu-container {
+  flex: 1 1 auto; /* Занимает оставшееся пространство */
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end; /* Пункты меню прижимаются вправо */
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
