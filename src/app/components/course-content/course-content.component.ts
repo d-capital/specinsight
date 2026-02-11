@@ -11,17 +11,17 @@ import { RouterModule } from '@angular/router';
 export class CourseContentComponent {
   chapters = [
     { title: 'Базовые концепции', description: 'Стейкхолдеры, типы требований, артефакты.', link:'article/1' },
-    { title: 'Что такое хорошие требования?', description: 'Как понять, что требования можно отдать в разработку.' },
-    { title: 'Что делать на новом проекте?', description: 'Анализ стейкхолдеров, глоссарий, базовая документация.' },
-    { title: 'Выявление требований', description: 'Интервью, воркшопы, прототипы, анализ документации.' },
-    { title: 'Приоретизация требований', description: 'MosCoW, Cost of delay, RICE...' },
-    { title: 'Документация требований', description: 'Пользовательские истории, Use Case, UML, BPMN, ERD' },
-    { title: 'Валидация требований', description: 'Демо, приемочные критерии, Ghrekin, ' },
-    { title: 'SQL для BA', description: 'SELECT, JOIN, DISTINCT и многое другое' },
-    { title: 'Документация API', description: 'Коллеции в POSTman, OpenApi и Swagger, REST,пара слов о микросервисах и очередях' },
-    { title: 'Как работать в Agile команде', description: 'Планнинги, спринты, демо и когда же выявлять требования?' },
-    { title: 'В плену у Ганта', description: 'Как написать SRS.' },
-    { title: 'Управление изменениями', description: 'Клиент кричит - "Все пропало!"' },
+    { title: 'Что такое хорошие требования?', description: 'Как понять, что требования можно отдать в разработку.', link:'article/2' },
+    { title: 'Что делать на новом проекте?', description: 'Анализ стейкхолдеров, глоссарий, базовая документация.', link:'article/3' },
+    { title: 'Выявление требований', description: 'Интервью, воркшопы, прототипы, анализ документации.', link:'article/4' },
+    { title: 'Приоретизация требований', description: 'MosCoW, Cost of delay, RICE...', link:'article/5' },
+    { title: 'Документация требований', description: 'Пользовательские истории, Use Case, UML, BPMN, ERD', link:'article/6' },
+    { title: 'Валидация требований', description: 'Демо, приемочные критерии, Ghrekin, ', link:'article/7' },
+    { title: 'SQL для BA', description: 'SELECT, JOIN, DISTINCT и многое другое', link:'article/8' },
+    { title: 'Документация API', description: 'Коллеции в POSTman, OpenApi и Swagger, REST,пара слов о микросервисах и очередях', link:'article/9' },
+    { title: 'Как работать в Agile команде', description: 'Планнинги, спринты, демо и когда же выявлять требования?', link:'article/10' },
+    { title: 'В плену у Ганта', description: 'Как написать SRS.', link:'article/11' },
+    { title: 'Управление изменениями', description: 'Клиент кричит - "Все пропало!"', link:'article/12' },
     
   ];
 }
