@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import * as articlesList from '../articles/articles.json'
 
 @Component({
@@ -12,11 +13,11 @@ import * as articlesList from '../articles/articles.json'
 export class ArticleComponent {
   id = '1'; 
   title = "";
-  content = "";
+  content:SafeHtml = "";
   article:any;
   articles:any;
 
-  constructor(private http: HttpClient, private route: ActivatedRoute) {
+  constructor(private http: HttpClient, private route: ActivatedRoute, private sanitizer: DomSanitizer) {
     const artid = this.route.snapshot.paramMap.get('id');
     this.id = artid ? artid: '1';
     this.articles = articlesList['articles'];
@@ -25,7 +26,8 @@ export class ArticleComponent {
   fetchArticle(id:string) {
     this.article = this.articles.find((a: any) => a.id === id);
     this.title = this.article["title"];
-    this.content = this.article["content"];
+    this.content = this.sanitizer.bypassSecurityTrustHtml(this.article["content"]);
+
   }
 
 }
