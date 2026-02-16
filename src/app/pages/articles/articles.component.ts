@@ -31,6 +31,7 @@ export class ArticlesComponent {
     const start = (this.page - 1) * this.pageSize;
     const end = start + this.pageSize;
     this.pagedArticles = this.articles.slice(start, end);
+    this.scrollToTop()
   }
 
   nextPage() {
@@ -50,6 +51,10 @@ export class ArticlesComponent {
   public readArticle(event:any){
     let id:string = event.target.id; 
     this.router.navigate(["/article", id]);
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
 }

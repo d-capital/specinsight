@@ -7,9 +7,9 @@
         <p [innerHTML]="article.content.length > 100 ? (article.content | slice:0:100) + '...' : article.content"></p>
         <hr />
     </div>
-</div>
-<div class="pagination">
-    <button (click)="prevPage()" [disabled]="page === 1">Предыдущая</button>
-    <span>Страница {{ page }} из {{ totalPages }}</span>
-    <button (click)="nextPage()" [disabled]="page === totalPages">Следующая</button>
+    <div class="pagination">
+        <button (click)="prevPage()" [disabled]="page === 1">Предыдущая</button>
+        <span>Страница {{ page }} из {{ totalPages }}</span>
+        <button (click)="nextPage()" [disabled]="page === totalPages">Следующая</button>
+    </div>
 </div>
