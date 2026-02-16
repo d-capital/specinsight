@@ -18,5 +18,15 @@ export class AppComponent {
         window.scrollTo(0, 0);
       }
     });
+    console.log(navigator.language)
+    var isUserLangSet = localStorage.getItem("isUserLangSet");
+    if (isUserLangSet !== "yes") {
+      if (navigator.language == "ru" || navigator.language == "ru-RU") {
+        localStorage.setItem("language", "ru");
+      }
+      else {
+        localStorage.setItem("language", "en");
+      }
+    }
   }
 }

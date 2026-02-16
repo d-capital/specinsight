@@ -23,7 +23,13 @@ export class ArticlesComponent {
 
 
   constructor(private http: HttpClient, private router: Router) {
-    this.articles = articlesList['articles'];
+    var language = localStorage.getItem('language');
+    if (language == 'ru') {
+      this.articles = articlesList['articles'];
+    }
+    else{
+      this.articles = articlesList['articles_en'];
+    }
     this.totalPages = Math.ceil(this.articles.length / this.pageSize);
     this.fetchArticles();
   }

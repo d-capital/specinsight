@@ -6,5 +6,10 @@
             <a routerLink="/articles">Курс</a>
             <a routerLink="/login">Об авторе</a>
         </nav>
+        <select [(ngModel)]="lang" (ngModelChange)="onChange($event)">
+            <option *ngFor="let language of languages" [value]="language">
+                {{ language }}
+            </option>
+        </select>
     </div>
 </footer>

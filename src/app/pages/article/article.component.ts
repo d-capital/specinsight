@@ -20,7 +20,13 @@ export class ArticleComponent {
   constructor(private http: HttpClient, private route: ActivatedRoute, private sanitizer: DomSanitizer) {
     const artid = this.route.snapshot.paramMap.get('id');
     this.id = artid ? artid: '1';
-    this.articles = articlesList['articles'];
+        var language = localStorage.getItem('language');
+    if (language == 'ru') {
+      this.articles = articlesList['articles'];
+    }
+    else{
+      this.articles = articlesList['articles_en'];
+    }
     this.fetchArticle(this.id);
   }
   fetchArticle(id:string) {
