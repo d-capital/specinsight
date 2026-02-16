@@ -18,7 +18,7 @@ export class CourseContentComponent {
     { title: 'Документация требований', description: 'Пользовательские истории, Use Case, UML, BPMN, ERD', link:'article/6' },
     { title: 'Валидация требований', description: 'Демо, приемочные критерии, Ghrekin, ', link:'article/7' },
     { title: 'SQL для BA', description: 'SELECT, JOIN, DISTINCT и многое другое', link:'article/8' },
-    { title: 'Документация API', description: 'Коллеции в POSTman, OpenApi и Swagger, REST,пара слов о микросервисах и очередях', link:'article/9' },
+    { title: 'Документация API', description: 'Коллеции в POSTman, OpenApi и Swagger, REST', link:'article/9' },
     { title: 'Как работать в Agile команде', description: 'Планнинги, спринты, демо и когда же выявлять требования?', link:'article/10' },
     { title: 'В плену у Ганта', description: 'Как написать SRS.', link:'article/11' },
     { title: 'Управление изменениями', description: 'Клиент кричит - "Все пропало!"', link:'article/12' },
