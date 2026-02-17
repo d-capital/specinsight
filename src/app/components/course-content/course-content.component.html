@@ -1,5 +1,5 @@
 <section class="course-section dark">
-    <h2 class="section-title">Содержание Курса</h2>
+    <h2 class="section-title">{{courseContentLabel }}</h2>
     <div class="chapters">
       <div class="chapter-card" *ngFor="let chapter of chapters">
         <a routerLink="{{chapter.link}}">
@@ -8,7 +8,7 @@
         </a>
       </div>
       <div class="chapter-card">
-        <a routerLink="/articles" class="articles-link" routerLinkActive="active">К курсу →</a>
+        <a routerLink="/articles" class="articles-link" routerLinkActive="active">{{toCourseLabel}} →</a>
     </div>
     </div>
   </section>

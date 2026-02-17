@@ -2,9 +2,9 @@
     <div class="footer-content">
         <p>&copy; {{ currentYear }} Spec Insight</p>
         <nav class="footer-nav">
-            <a routerLink="/">Главная</a>
-            <a routerLink="/articles">Курс</a>
-            <a routerLink="/login">Об авторе</a>
+            <a routerLink="/">{{homeLabel}}</a>
+            <a routerLink="/articles">{{courseLabel}}</a>
+            <a routerLink="/login">{{aboutLabel}}</a>
         </nav>
         <select [(ngModel)]="lang" (ngModelChange)="onChange($event)">
             <option *ngFor="let language of languages" [value]="language">

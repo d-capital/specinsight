@@ -1,15 +1,15 @@
 <div class="container">
-    <h2>Оглавление</h2>
+    <h2>{{tableOfContents}}</h2>
     <hr />
     <div *ngFor="let article of pagedArticles">
         <h4>{{ article.title }}</h4>
-        <button id = "{{article.id}}" (click)="readArticle($event)">Читать</button>
+        <button class="readbutton" id = "{{article.id}}" (click)="readArticle($event)">{{readButtonLabel}}</button>
         <p [innerHTML]="article.content.length > 100 ? (article.content | slice:0:100) + '...' : article.content"></p>
         <hr />
     </div>
     <div class="pagination">
-        <button (click)="prevPage()" [disabled]="page === 1">Предыдущая</button>
-        <span>Страница {{ page }} из {{ totalPages }}</span>
-        <button (click)="nextPage()" [disabled]="page === totalPages">Следующая</button>
+        <button (click)="prevPage()" [disabled]="page === 1"><</button>
+        <span>{{ page }} / {{ totalPages }}</span>
+        <button (click)="nextPage()" [disabled]="page === totalPages">></button>
     </div>
 </div>

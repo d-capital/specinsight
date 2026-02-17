@@ -5,34 +5,20 @@
                 <img src="1743612831483.jpg" alt="Фото профиля">
             </div>
             <div class="about-content">
-                <h1>Станислав Дзюба</h1>
-                <p class="subtitle">Бизнес-аналитик</p>
+                <h1>{{nameLabel}}</h1>
+                <p class="subtitle">{{roleLabel}}</p>
                 <div class="divider"></div>
                 <p class="description">
-                    Привет! Я бизнес-аналитик с 5‑летним опытом создания различных типов приложений - микросервисов, пользовательских сайтов.
-                    Я специализируюсь на логистике и e-comm, работал с маркетплейсом страховок и подкаст платформой.
-                    Для меня важно создавать культуру работы с требованиями в компаниях.
-                    У меня есть опыт управления проектами в автопроме, работал как в парадигме waterfall
-                     так и в гибких методолгиях управления проектами и везде находил пути оптимизировать работу.
+                    {{description}}
                 </p>
                 <div class="skills">
-                    <h3>Навыки</h3>
+                    <h3>{{skills}}</h3>
                     <ul>
-                        <li>Выявление и докменатация требований</li>
-                        <li>Управление изменениями</li>
-                        <li>Приоретизация</li>
-                        <li>Прототипирование(Figma)</li>
-                        <li>Управление проектами</li>
-                        <li>BPMN, UML, C4</li>
-                        <li>Git & GitHub</li>
-                        <li>Python - Flask, FastAPI</li>
-                        <li>Angular</li>
-                        <li>REST API</li>
-                        <li>Kafka</li>
+                        <li *ngFor="let sk of skillList">{{sk}}</li>
                     </ul>
                 </div>
                 <div class="contact-info">
-                    <h3>Связаться</h3>
+                    <h3>{{contacts}}</h3>
                     <ul>
                         <li><a href="mailto:sdziuba@outlook.com">sdziuba&#64;outlook.com</a></li>
                         <li><a href="https://github.com/d-capital" target="_blank">GitHub</a></li>

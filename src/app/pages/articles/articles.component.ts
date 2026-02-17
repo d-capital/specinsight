@@ -20,15 +20,25 @@ export class ArticlesComponent {
   pageSize = 5;
   totalPages = 1;
   pagedArticles:any[] = [];
+  tableOfContents:string = "Оглавление";
+  tableOfContentsRu:string = "Оглавление";
+  tableOfContentsEn:string = "Table Of Contents";
+  readButtonLabel:string = "Читать";
+  readButtonLabelEn:string = "Read";
+  readButtonLabelRu:string = "Читать";
 
 
   constructor(private http: HttpClient, private router: Router) {
     var language = localStorage.getItem('language');
     if (language == 'ru') {
       this.articles = articlesList['articles'];
+      this.tableOfContents = this.tableOfContentsRu;
+      this.readButtonLabel = this.readButtonLabelRu;
     }
     else{
       this.articles = articlesList['articles_en'];
+      this.tableOfContents = this.tableOfContentsEn;
+      this.readButtonLabel = this.readButtonLabelEn;
     }
     this.totalPages = Math.ceil(this.articles.length / this.pageSize);
     this.fetchArticles();

@@ -13,11 +13,6 @@ import { FooterComponent } from './components/footer/footer.component';
 export class AppComponent {
   title = 'Spec Insight';
    constructor(private router: Router) {
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        window.scrollTo(0, 0);
-      }
-    });
     console.log(navigator.language)
     var isUserLangSet = localStorage.getItem("isUserLangSet");
     if (isUserLangSet !== "yes") {
