@@ -30,6 +30,8 @@ export class CourseContentComponent implements OnInit {
     { title: 'Как работать в Agile команде', description: 'Планнинги, спринты, демо ...', link:'article/10' },
     { title: 'В плену у Ганта', description: 'Как написать SRS.', link:'article/11' },
     { title: 'Управление изменениями', description: 'Клиент кричит - "Все пропало!"', link:'article/12' },
+    { title: 'Очереди сообщений', description: 'Как работать с очередями в распределённых системах.', link:'article/13' },
+    { title: 'NoSQL и Объектное хранилище', description: 'Как работать с NoSQL и объектными хранилищами.', link:'article/14' },
     
   ];
   chaptersRu = [
@@ -45,6 +47,8 @@ export class CourseContentComponent implements OnInit {
     { title: 'Как работать в Agile команде', description: 'Планнинги, спринты, демо ...', link:'article/10' },
     { title: 'В плену у Ганта', description: 'Как написать SRS.', link:'article/11' },
     { title: 'Управление изменениями', description: 'Клиент кричит - "Все пропало!"', link:'article/12' },
+    { title: 'Очереди сообщений', description: 'Как работать с очередями в распределённых системах.', link:'article/13' },
+    { title: 'NoSQL и Объектное хранилище', description: 'Как работать с NoSQL и объектными хранилищами.', link:'article/14' },
     
   ];
     chaptersEn = [
@@ -60,6 +64,8 @@ export class CourseContentComponent implements OnInit {
     { title: 'How to Work in an Agile Team', description: 'Planning, sprints, demo ...', link:'article/10' },
     { title: 'Captured by Gant', description: 'System Requirements Specification.', link:'article/11' },
     { title: 'Change Management', description: 'How to deal with change requests.', link:'article/12' },
+    { title: 'Message Queues', description: 'How to work with message queues in distributed systems.', link:'article/13' },
+    { title: 'NoSQL and Object Storage', description: 'How to work with NoSQL and object storage systems.', link:'article/14' },
     
   ];
 
