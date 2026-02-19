@@ -12,8 +12,8 @@ export class HeaderComponent implements OnInit{
   courseLabelEn:string = "Course";
   courseLabelRu:string = "Курс";
 
-  aboutLabel: string = "Об авторе";
-  aboutLabelRu: string = "Об авторе";
+  aboutLabel: string = "О курсу";
+  aboutLabelRu: string = "О курсе";
   aboutLabelEn: string = "About";
 
   ngOnInit(): void {

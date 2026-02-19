@@ -23,8 +23,8 @@ export class FooterComponent implements OnInit {
   courseLabelEn:string = "Course";
   courseLabelRu:string = "Курс";
 
-  aboutLabel: string = "Об авторе";
-  aboutLabelRu: string = "Об авторе";
+  aboutLabel: string = "О курсе";
+  aboutLabelRu: string = "О курсе";
   aboutLabelEn: string = "About";
 
   ngOnInit(): void {
